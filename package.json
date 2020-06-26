@@ -6,26 +6,30 @@
 		"start": "nodemon ./bin/www"
 	},
 	"dependencies": {
-		"body-parser": "latest",
+		"alchemy-api": "^1.3.3",
+		"body-parser": "^1.19.0",
+		"chartist": "^0.11.4",
 		"chartist-plugin-axistitle": "latest",
 		"chartist-plugin-pointlabels": "latest",
 		"chartist-plugin-threshold": "latest",
 		"chartist-plugin-tooltips": "latest",
 		"chartist-plugin-zoom": "latest",
 		"clusterfck": "latest",
-		"cookie-parser": "latest",
+		"cookie-parser": "^1.4.4",
 		"d3-cloud": "latest",
 		"d3-dispatch": "latest",
 		"datamaps": "latest",
 		"debug": "latest",
 		"diskdb": "latest",
 		"ejs": "latest",
-		"express": "latest",
+		"express": "^4.17.1",
 		"leven": "latest",
-		"mongodb": "latest",
+		"mongodb": "^2.2.33",
 		"moodjs": "latest",
+		"morgan": "^1.9.1",
+		"ng-chartist": "^4.1.0",
 		"node-chartist": "latest",
-		"sentiment": "latest",
+		"sentiment": "^5.0.2",
 		"serve-favicon": "latest",
 		"topojson": "latest",
 		"twitter": "latest",
@@ -36,5 +40,8 @@
 		"url": "https://github.com/adhirajsinghchauhan/Twitter-Sentiment-Analysis.git"
 	},
 	"author": "adhirajsinghchauhan",
-	"license": "MIT License"
+	"license": "MIT License",
+	"devDependencies": {
+		"@types/chartist": "^0.9.47"
+	}
 }

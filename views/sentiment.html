@@ -3,12 +3,11 @@
 	<head>
 	<meta charset = "utf-8">
 	<meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-	<title>Twitter Sentiment Analysis &mdash; ITT Project</title>
+	<title>Twitter Sentiment Analysis</title>
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
 	<meta name = "description" content = "Twitter Sentiment Analysis" />
-	<meta name = "keywords" content = "twitter, sentiment, analysis, ITT, project" />
-	<meta name = "author" content = "Adhiraj Singh Chauhan" />
-
+	
+	
 	<!-- Facebook and Twitter integration -->
 	<meta property = "og:title" content = "Twitter Sentiment Analysis" />
 	<meta property = "og:image" content = "" />
@@ -62,42 +61,24 @@
 		<div class = "itt-container">
 			<div class = "row">
 				<div class = "col-md-12 text-right itt-contact">
-					<ul class = "">
-						<li><a href = "tel://9591392237"><i class = "fa fa-phone">&nbsp;</i>+91 95913 92237</a></li>
-						<li><a href = "https://twitter.com/adhirajaddy1" target = "_blank"><i class = "fa fa-twitter"></i></a></li>
-						<li><a href = "https://fb.com/adhirajsinghchauhan" target = "_blank"><i class = "fa fa-facebook"></i></a></li>
-						<li><a href = "mailto:adhirajsinghchauhan@gmail.com"><i class = "fa fa-envelope"></i></a></li>
-					</ul>
+					
 				</div>
 			</div>
 			<div class = "row">
 				<div class = "col-sm-4 col-xs-12">
-					<div id = "itt-logo"><a href = "/">TSA<em>.</em></a></div>
+<br>
+<br>
+					<div id = "itt-logo"><a href = "/">Twitter Sentimental Analysis<em>.</em></a></div>
 				</div>
 				<div class = "col-xs-8 text-right menu-1">
+<br>
+<br>
 					<ul>
-						<li class = "active"><a href = "/">Home</a></li>
-						<li><a href = "about">About</a></li>
-						<!-- <li class = "has-dropdown">
-							<a href = "services">Services</a>
-							<ul class = "dropdown">
-								<li><a href = "#">Web Design</a></li>
-								<li><a href = "#">eCommerce</a></li>
-								<li><a href = "#">Branding</a></li>
-								<li><a href = "#">API</a></li>
-							</ul>
-						</li>
-						<li class = "has-dropdown">
-							<a href = "#">Dropdown</a>
-							<ul class = "dropdown">
-								<li><a href = "#">HTML5</a></li>
-								<li><a href = "#">CSS3</a></li>
-								<li><a href = "#">Sass</a></li>
-								<li><a href = "#">jQuery</a></li>
-							</ul>
-						</li> -->
-						<li><a href = "account">Account</a></li>
-						<li><a class = "js-gotocontact">Contact</a></li>
+						<li><a href = "/">Home</a></li>
+						
+						
+						<li  class = "active"><a href = "sentiment">Analyse</a></li>
+						<li><a href ="http://localhost:4000/">Live Stream Twitter</a></li>
 					</ul>
 				</div>
 			</div>
@@ -112,8 +93,8 @@
 				<div class = "col-md-8 col-md-offset-2 text-center">
 					<div class = "display-t">
 						<div class = "display-tc">
-							<h1 class = "animate-box" data-animate-effect = "fadeInUp">Demo</h1>
-							<h2 class = "animate-box" data-animate-effect = "fadeInUp">Check out the demo of the project. This will be limited to 50 API calls per day.</h2>
+						
+							<h2 class = "animate-box" data-animate-effect = "fadeInUp">Check out the Trending Topics right Now</h2>
 						</div>
 					</div>
 				</div>
@@ -143,34 +124,18 @@
 									</optgroup>
 									<optgroup label = "Line">
 										<option value = "lin1">Simple Line Chart</option>
-										<option value = "lin2">Holes in Data</option>
-										<option value = "lin3">Filled Holes in Data</option>
-										<option value = "lin4">Only Whole Numbers</option>
-										<option value = "lin5">Line Scatter Diagram with Responsive Settings</option>
 										<option value = "lin6">Line Chart with Area</option>
 										<option value = "lin7">Bi-polar Line Chart with Area Only</option>
-										<option value = "lin8">Using Events to Replace Graphics</option>
 										<option value = "lin9">Advanced SMIL Animations</option>
 										<option value = "lin10">SVG Path Animation</option>
 										<option value = "lin11">Line Interpolation / Smoothing</option>
-										<option value = "lin12">Series Overrides</option>
-										<option value = "lin13">Boxplot</option>
 									</optgroup>
 									<optgroup label = "Bar">
 										<option value = "bar1">Bi-polar Bar Chart</option>
-										<option value = "bar2">Overlapping Bars on Mobile</option>
-										<option value = "bar3">Add Peak Circles Using the Draw Events</option>
-										<option value = "bar4">Multi-line Labels</option>
-										<option value = "bar5">Stacked Bar Chart</option>
-										<option value = "bar6">Horizontal Bar Chart</option>
-										<option value = "bar7">Extreme Responsive Configuration</option>
-										<option value = "bar8">Distributed Series</option>
-										<option value = "bar9">Label Placement</option>
 									</optgroup>
 									<optgroup label = "Pie">
 										<option value = "pie1">Simple Pie Chart</option>
 										<option value = "pie2">Pie Chart with Custom Labels</option>
-										<option value = "pie3">Gauge Chart</option>
 										<option value = "pie4">Animating a Donut with SVG.Animate</option>
 									</optgroup>
 								</select>
@@ -180,7 +145,7 @@
 							<button class = "btn btn-primary btn-lg" id = "search-btn" <% if (error) { %> disabled="disabled"<% } %>>Search</button>
 							<% if (error) { %> <%= message %> <% } %>
 							<div id = "loader" class = "mdl-spinner mdl-spinner--single-color mdl-js-spinner" />
-							<!-- <input type = "submit" value = "Send Message" class = "btn btn-primary btn-lg" id = "search-btn"> -->
+							
 						</div>
 					</form>
 				</div>
@@ -270,121 +235,10 @@
 		</div>
 	</div>
 
-	<div id = "itt-results" class = "itt-section">
-		<div class = "itt-container">
-			<div class = "row">
-				<div class = "col-md-8 col-md-offset-2 text-center itt-heading animate-box">
-					<h2>Raw Data</h2>
-					<p>If graphs aren't your jam, have a look at the raw data</p>
-				</div>
-			</div>
-			<div class = "row">
-				<div class = "col-md-12">
-					<div class = "tweet-results"></div>
-				</div>
-			</div>
-			<div class = "row">
-				<div class = "col-md-12 text-center animate-box">
-					<button class = "btn btn-primary btn-lg" id = "prev-data-btn">Prev</button>
-					<span id = "positionData"></span>
-					<button class = "btn btn-primary btn-lg" id = "next-data-btn">Next</button>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
-	<div id = "itt-subscribe">
-		<div class = "itt-container">
-			<div class = "row animate-box">
-				<div class = "col-md-8 col-md-offset-2 text-center itt-heading">
-					<h2>Contact</h2>
-					<p>Drop a mail if you need more information about this project, if you'd like to contribute, and/or if you have any feedback.</p>
-				</div>
-			</div>
-			<div class = "row animate-box">
-				<div class = "col-md-12">
-					<form class = "form-inline" method = "POST" action = "sendMessage">
-						<div class = "col-md-6">
-							<div class = "form-group">
-								<label for = "name" class = "sr-only">Name</label>
-								<input type = "text" class = "form-control" id = "name" placeholder = "Your Name">
-							</div>
-						</div>
-						<div class = "col-md-6">
-							<div class = "form-group">
-								<label for = "email" class = "sr-only">E-Mail</label>
-								<input type = "email" class = "form-control" id = "email" placeholder = "Your E-Mail">
-							</div>
-						</div>
-						<div class = "col-md-12">
-							<div class = "form-group">
-								<label for = "name" class = "sr-only">Message</label>
-								<textarea name = "message" id = "message" cols = "30" rows = "10" class = "form-control" placeholder = "Your Message"></textarea>
-							</div>
-						</div>
-						<div class = "col-md-4 col-sm-4">
-							<button type = "submit" class = "btn btn-default btn-block">Send Message</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer id = "itt-footer" role = "contentinfo">
-		<div class = "itt-container">
-			<div class = "row row-p	b-md">
-
-				<div class = "col-md-4">
-					<div class = "itt-widget">
-						<h3>About Me</h3>
-						<p>I'm a 19 year old undergraduate student, currently studying <em>Information Technology</em> at Manipal Institute of Technology, Manipal.</p>
-					</div>
-				</div>
-
-				<div class = "col-md-4 col-md-push-1">
-					<div class = "itt-widget">
-						<h3>Links</h3>
-						<ul class = "itt-footer-links">
-							<li><a href = "https://github.com/adhirajsinghchauhan" target = "_blank"><i class = "fa fa-github">&nbsp;</i>GitHub</a></li>
-							<li><a href = "https://fb.com/adhirajsinghchauhan" target = "_blank"><i class = "fa fa-facebook-square">&nbsp;</i>Facebook</a></li>
-							<li><a href = "https://twitter.com/adhirajaddy1" target = "_blank"><i class = "fa fa-twitter">&nbsp;</i>Twitter</a></li>
-							<li><a href = "https://linkedin.com/in/adhirajsinghchauhan" target = "_blank"><i class = "fa fa-linkedin">&nbsp;</i>LinkedIn</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class = "col-md-4">
-					<div class = "itt-widget">
-						<h3>Get In Touch</h3>
-						<ul class = "itt-quick-contact">
-							<li><a href = "tel://9591392237"><i class = "fa fa-phone"></i>+91 95913 92237</a></li>
-							<li><a href = "whatsapp://9560547016"><i class = "fa fa-whatsapp"></i>+91 95605 47016</a></li>
-							<li><a href = "mailto:adhirajsinghchauhan@gmail.com"><i class = "fa fa-envelope"></i>adhirajsinghchauhan@gmail.com</a></li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-
-			<div class = "row copyright">
-				<div class = "col-md-12">
-					<p class = "pull-left">
-						<small class = "block">&copy; 2016 Adhiraj Singh Chauhan</small>
-					</p>
-					<p class = "pull-right">
-						<ul class = "itt-social-icons pull-right">
-							<li><a href = "https://twitter.com/adhirajaddy1" target = "_blank"><i class = "fa fa-twitter"></i></a></li>
-							<li><a href = "https://fb.com/adhirajsinghchauhan" target = "_blank"><i class = "fa fa-facebook-official"></i></a></li>
-							<li><a href = "https://linkedin.com/in/adhirajsinghchauhan" target = "_blank"><i class = "fa fa-linkedin"></i></a></li>
-							<li><a href = "mailto:adhirajsinghchauhan@gmail.com"><i class = "fa fa-envelope"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
+	
+	
 	</div>
 
 	<div class = "gototop js-top">
@@ -462,6 +316,5 @@
 			</div>
 		</div>
 	</script>
-
 	</body>
 </html>

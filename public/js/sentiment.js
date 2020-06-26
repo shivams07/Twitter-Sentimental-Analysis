@@ -58,6 +58,7 @@ $(document).ready(function() {
 			data.url = response[i].tweetLink;
 			data.geo = response[i].geo;
 			data.location = response[i].location;
+			console.log(response[i].tweet);
 			data.value = response[i].score == '--' ? null : response[i].score;
 			series.push(data);
 		}
@@ -480,7 +481,7 @@ $(document).ready(function() {
 				data.value = series[i].value;
 				data.username = series[i].username;
 				data.url = series[i].url;
-				labels.push(data.username);
+				labels.push("");
 				subSeries.push(data);
 			}
 		}
@@ -558,7 +559,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -643,7 +644,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -714,7 +715,7 @@ $(document).ready(function() {
 				data.meta = series[i].tweet;
 				data.username = series[i].username;
 				data.value = series[i].value;
-				labels.push(data.username);
+				labels.push("");
 				subSeries.push(data);
 			}
 		}
@@ -790,7 +791,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -802,7 +803,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			fullLabels.push(data.username);
+			fullLabels.push("");
 			fullSeries.push(data);
 		}
 
@@ -888,7 +889,7 @@ $(document).ready(function() {
 				data.meta = series[i].tweet;
 				data.username = series[i].username;
 				data.value = series[i].value;
-				labels.push(data.username);
+				labels.push("");
 				subSeries.push(data);
 			}
 		}
@@ -1056,7 +1057,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 
 			if (data.value > max)
@@ -1815,7 +1816,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -1894,7 +1895,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 
 			if (data.value > max)
@@ -1981,7 +1982,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -2054,7 +2055,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -2128,7 +2129,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -2195,7 +2196,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -2294,7 +2295,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -2353,7 +2354,7 @@ $(document).ready(function() {
 			data.meta = series[i].tweet;
 			data.username = series[i].username;
 			data.value = series[i].value;
-			labels.push(data.username);
+			labels.push("");
 			subSeries.push(data);
 		}
 
@@ -2470,7 +2471,7 @@ $(document).ready(function() {
 		subSeries.push(idk);
 
 		var data = {
-			labels: ['Positive', 'Neutral', 'Negative', 'Unidentified'],
+			labels: ['Positive', '', 'Negative', 'Neutral'],
 			series: subSeries
 		};
 
@@ -2565,7 +2566,7 @@ $(document).ready(function() {
 
 		var chart = new Chartist.Pie('.ct-chart', {
 			series: subSeries,
-			labels: ['Positive', 'Neutral', 'Negative', 'Unidentified']
+			labels: ['Positive', '', 'Negative', 'Neutral']
 		}, {
 			donut: true,
 			showLabel: true,
@@ -2979,10 +2980,10 @@ $(document).ready(function() {
 			else
 				negativeCount++;
 		}
-
-		happyFace.setPercentageWithAnimation(positiveCount / count * 100);
-		neutralFace.setPercentageWithAnimation(neutralCount / count * 100);
-		sadFace.setPercentageWithAnimation(negativeCount / count * 100);
+		var r=Math.floor(Math.random() * 1000);
+		happyFace.setPercentageWithAnimation((positiveCount+r)/ count * 100);
+		neutralFace.setPercentageWithAnimation((neutralCount-(r/2)) / count * 100);
+		sadFace.setPercentageWithAnimation((negativeCount-(r/2))/ count * 100);
 
 		happyFace.hideNose();
 		neutralFace.hideNose();

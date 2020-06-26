@@ -40,6 +40,9 @@ router.post('/login', function(req, res) {
 			};
 			var user = db.collection('users').findOne(_id, function(err, document) {
 				console.log(document);
+				res.send({
+						result: user
+					});
 			});
 
 			// users.insert(newUser, function(err, result) {

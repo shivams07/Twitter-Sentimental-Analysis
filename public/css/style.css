@@ -12,7 +12,7 @@
 *
 * ======================================================= */
 body {
-	font-family: "Droid Sans", Arial, sans-serif;
+	font-family: "Droid Sans";
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.7;
@@ -122,7 +122,7 @@ figure {
 }
 
 .itt-nav #itt-logo {
-	font-size: 20px;
+	font-size: 15px;
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
